@@ -4,9 +4,9 @@
     "browser": true,
     "jest": true
   },
-  "plugins": ["react", "react-hooks", "jsx-a11y", "import", "html", "prettier"],
+  "plugins": ["react", "jsx-a11y", "import"],
   "extends": [
-    "wesbos"
+    "airbnb"
   ],
   "rules": {
     "react/jsx-filename-extension": [
