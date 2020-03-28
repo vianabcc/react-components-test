@@ -9,12 +9,12 @@ type Props = {
   show: boolean
 };
 
-type State = { 
+type State = {
   counter: number
 }
  class App extends Component<Props, State> {
-  static defaultProps: Props = { 
-    show: false 
+  static defaultProps: Props = {
+    show: false
   };
   state: State = {
      counter: 0
@@ -24,7 +24,7 @@ type State = {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Hello name="Vinicius"/>
+          <Hello />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
