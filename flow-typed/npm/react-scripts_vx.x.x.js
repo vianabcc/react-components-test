@@ -130,7 +130,9 @@ declare module 'react-scripts/config/webpack.config.js' {
   declare module.exports: $Exports<'react-scripts/config/webpack.config'>;
 }
 declare module 'react-scripts/config/webpackDevServer.config.js' {
-  declare module.exports: $Exports<'react-scripts/config/webpackDevServer.config'>;
+  declare module.exports: $Exports<
+    'react-scripts/config/webpackDevServer.config'
+  >;
 }
 declare module 'react-scripts/scripts/build.js' {
   declare module.exports: $Exports<'react-scripts/scripts/build'>;
@@ -148,11 +150,17 @@ declare module 'react-scripts/scripts/test.js' {
   declare module.exports: $Exports<'react-scripts/scripts/test'>;
 }
 declare module 'react-scripts/scripts/utils/createJestConfig.js' {
-  declare module.exports: $Exports<'react-scripts/scripts/utils/createJestConfig'>;
+  declare module.exports: $Exports<
+    'react-scripts/scripts/utils/createJestConfig'
+  >;
 }
 declare module 'react-scripts/scripts/utils/verifyPackageTree.js' {
-  declare module.exports: $Exports<'react-scripts/scripts/utils/verifyPackageTree'>;
+  declare module.exports: $Exports<
+    'react-scripts/scripts/utils/verifyPackageTree'
+  >;
 }
 declare module 'react-scripts/scripts/utils/verifyTypeScriptSetup.js' {
-  declare module.exports: $Exports<'react-scripts/scripts/utils/verifyTypeScriptSetup'>;
+  declare module.exports: $Exports<
+    'react-scripts/scripts/utils/verifyTypeScriptSetup'
+  >;
 }

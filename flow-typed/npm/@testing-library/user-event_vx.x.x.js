@@ -72,31 +72,49 @@ declare module '@testing-library/user-event/src' {
 
 // Filename aliases
 declare module '@testing-library/user-event/__tests__/react/click.js' {
-  declare module.exports: $Exports<'@testing-library/user-event/__tests__/react/click'>;
+  declare module.exports: $Exports<
+    '@testing-library/user-event/__tests__/react/click'
+  >;
 }
 declare module '@testing-library/user-event/__tests__/react/dblclick.js' {
-  declare module.exports: $Exports<'@testing-library/user-event/__tests__/react/dblclick'>;
+  declare module.exports: $Exports<
+    '@testing-library/user-event/__tests__/react/dblclick'
+  >;
 }
 declare module '@testing-library/user-event/__tests__/react/selectoptions.js' {
-  declare module.exports: $Exports<'@testing-library/user-event/__tests__/react/selectoptions'>;
+  declare module.exports: $Exports<
+    '@testing-library/user-event/__tests__/react/selectoptions'
+  >;
 }
 declare module '@testing-library/user-event/__tests__/react/tab.js' {
-  declare module.exports: $Exports<'@testing-library/user-event/__tests__/react/tab'>;
+  declare module.exports: $Exports<
+    '@testing-library/user-event/__tests__/react/tab'
+  >;
 }
 declare module '@testing-library/user-event/__tests__/react/type.js' {
-  declare module.exports: $Exports<'@testing-library/user-event/__tests__/react/type'>;
+  declare module.exports: $Exports<
+    '@testing-library/user-event/__tests__/react/type'
+  >;
 }
 declare module '@testing-library/user-event/__tests__/vue/click.js' {
-  declare module.exports: $Exports<'@testing-library/user-event/__tests__/vue/click'>;
+  declare module.exports: $Exports<
+    '@testing-library/user-event/__tests__/vue/click'
+  >;
 }
 declare module '@testing-library/user-event/__tests__/vue/dblclick.js' {
-  declare module.exports: $Exports<'@testing-library/user-event/__tests__/vue/dblclick'>;
+  declare module.exports: $Exports<
+    '@testing-library/user-event/__tests__/vue/dblclick'
+  >;
 }
 declare module '@testing-library/user-event/__tests__/vue/selectoptions.js' {
-  declare module.exports: $Exports<'@testing-library/user-event/__tests__/vue/selectoptions'>;
+  declare module.exports: $Exports<
+    '@testing-library/user-event/__tests__/vue/selectoptions'
+  >;
 }
 declare module '@testing-library/user-event/__tests__/vue/type.js' {
-  declare module.exports: $Exports<'@testing-library/user-event/__tests__/vue/type'>;
+  declare module.exports: $Exports<
+    '@testing-library/user-event/__tests__/vue/type'
+  >;
 }
 declare module '@testing-library/user-event/dist/index' {
   declare module.exports: $Exports<'@testing-library/user-event/dist'>;
@@ -105,7 +123,9 @@ declare module '@testing-library/user-event/dist/index.js' {
   declare module.exports: $Exports<'@testing-library/user-event/dist'>;
 }
 declare module '@testing-library/user-event/lint-staged.config.js' {
-  declare module.exports: $Exports<'@testing-library/user-event/lint-staged.config'>;
+  declare module.exports: $Exports<
+    '@testing-library/user-event/lint-staged.config'
+  >;
 }
 declare module '@testing-library/user-event/src/index' {
   declare module.exports: $Exports<'@testing-library/user-event/src'>;
