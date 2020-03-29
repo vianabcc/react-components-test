@@ -2,13 +2,18 @@
 import * as React from 'react';
 import Hello from './components/Hello';
 import Navbar from './components/Navbar';
-import "./App.css"
+import { Title, TitleSmall } from "./styles.js"
 
 const App = () => (
-  <div className="App">
+  <div>
     <Navbar />
-    <div className="App-header">
-      <Hello />
+    <div>
+      <Title fontSize={50}>
+        <Hello name="Vinicius"/>
+        <span> SPAN </span>
+      </Title>
+
+      <TitleSmall>Menor</TitleSmall>
     </div>
   </div>
 );
