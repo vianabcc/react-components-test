@@ -1,45 +1,21 @@
 // @flow
 import * as React from 'react';
-import { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Hello from "./components/Hello";
+import Hello from './components/Hello';
+import Navbar from './components/Navbar';
+import { Title, TitleSmall } from "./styles.js"
 
-type Props = {
-  show: boolean
-};
+const App = () => (
+  <div>
+    <Navbar />
+    <div>
+      <Title fontSize={50}>
+        <Hello name="Vinicius"/>
+        <span> SPAN </span>
+      </Title>
 
-type State = { 
-  counter: number
-}
- class App extends Component<Props, State> {
-  static defaultProps: Props = { 
-    show: false 
-  };
-  state: State = {
-     counter: 0
-  }
-  render(){
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Hello name="Vinicius"/>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+      <TitleSmall>Menor</TitleSmall>
+    </div>
+  </div>
+);
 
 export default App;
