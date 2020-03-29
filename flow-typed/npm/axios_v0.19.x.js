@@ -7,7 +7,7 @@ declare module 'axios' {
 
   declare type AxiosTransformer<T> = (
     data: T,
-    headers?: { [key: string]: mixed, ... }
+    headers?: { [key: string]: mixed, ...},
   ) => mixed;
 
   declare type ProxyConfig = {|
@@ -76,14 +76,14 @@ declare module 'axios' {
     |},
     baseURL?: string,
     cancelToken?: CancelToken,
-    headers?: { [key: string]: mixed, ... },
+    headers?: { [key: string]: mixed, ...},
     httpAgent?: HttpAgent,
     httpsAgent?: HttpsAgent,
     maxContentLength?: number,
     maxRedirects?: number,
     socketPath?: string | null,
-    params?: { [key: string]: mixed, ... },
-    paramsSerializer?: (params: { [key: string]: mixed, ... }) => string,
+    params?: { [key: string]: mixed, ...},
+    paramsSerializer?: (params: { [key: string]: mixed, ...}) => string,
     onUploadProgress?: (progressEvent: ProgressEvent) => void,
     onDownloadProgress?: (progressEvent: ProgressEvent) => void,
     proxy?: ProxyConfig | false,
@@ -111,7 +111,7 @@ declare module 'axios' {
   declare type AxiosXHR<T, R = T> = {|
     config: AxiosXHRConfig<T, R>,
     data: R,
-    headers: ?{ [key: string]: mixed, ... },
+    headers: ?{[key: string]: mixed, ...},
     status: number,
     statusText: string,
     request: http$ClientRequest<> | XMLHttpRequest | mixed,
@@ -186,7 +186,7 @@ declare module 'axios' {
     |};
     defaults: {|
       ...$Exact<AxiosXHRConfigBase<mixed>>,
-      headers: { [key: string]: mixed, ... },
+      headers: { [key: string]: mixed, ...},
     |};
     getUri<T, R>(config?: AxiosXHRConfig<T, R>): string;
   }
