@@ -1,21 +1,28 @@
 // @flow
-import * as React from 'react';
-import Hello from './components/Hello';
-import Navbar from './components/Navbar';
-import { Title, TitleSmall } from "./styles.js"
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from './styles/global';
+import light from './styles/themes/light';
+import dark from './styles/themes/dark';
+import { DefaultTheme } from './styles/themes/styles.d';
 
-const App = () => (
-  <div>
-    <Navbar />
-    <div>
-      <Title fontSize={50}>
-        <Hello name="Vinicius"/>
-        <span> SPAN </span>
-      </Title>
+import usePersistedState from './utils/usePersistedState';
+import Header from './components/Header';
 
-      <TitleSmall>Menor</TitleSmall>
-    </div>
-  </div>
-);
+const App = () => {
+  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', light);
 
+  const toggleTheme: function = () => {
+    setTheme(theme.title === 'light' ? dark : light);
+  };
+
+  return (
+    <ThemeProvider theme={theme}>
+      <div>
+        <GlobalStyle />
+        <Header toggleTheme={toggleTheme} />
+      </div>
+    </ThemeProvider>
+  );
+};
 export default App;
