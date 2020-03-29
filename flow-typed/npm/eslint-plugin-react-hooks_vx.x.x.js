@@ -32,14 +32,10 @@ declare module 'eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.producti
 
 // Filename aliases
 declare module 'eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.development.js' {
-  declare module.exports: $Exports<
-    'eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.development'
-  >;
+  declare module.exports: $Exports<'eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.development'>;
 }
 declare module 'eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.production.min.js' {
-  declare module.exports: $Exports<
-    'eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.production.min'
-  >;
+  declare module.exports: $Exports<'eslint-plugin-react-hooks/cjs/eslint-plugin-react-hooks.production.min'>;
 }
 declare module 'eslint-plugin-react-hooks/index' {
   declare module.exports: $Exports<'eslint-plugin-react-hooks'>;
